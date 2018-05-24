@@ -2,8 +2,8 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>vnewl</Title>
-			<Shortcut>vnewl</Shortcut>
+			<Title>vnl</Title>
+			<Shortcut>vnl</Shortcut>
 			<Description>Code snippet for an automatically implemented variable with create new List Class
 Language Version: C# 3.0 or higher</Description>
 			<Author>Evgeny Ustinkin</Author>
@@ -18,14 +18,9 @@ Language Version: C# 3.0 or higher</Description>
 					<ToolTip>Variable name</ToolTip>
 					<Default>item</Default>
 				</Literal>
-				<Literal>
-					<ID>class</ID>
-					<ToolTip>Class name</ToolTip>
-					<Default>Class</Default>
-				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[var $name$ = new List<$class$>();
-            $end$]]>
+			<Code Language="csharp"><![CDATA[var $name$ = new List<$end$>();
+            ]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
