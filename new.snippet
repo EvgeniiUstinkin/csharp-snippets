@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>ms</Title>
-			<Shortcut>ms</Shortcut>
-			<Description>Code snippet for an automatically implemented string Method
+			<Title>new</Title>
+			<Shortcut>new</Shortcut>
+			<Description>Code snippet for an automatically implemented tmp with create new Class
 Language Version: C# 3.0 or higher</Description>
 			<Author>Evgeny Ustinkin</Author>
 			<SnippetTypes>
@@ -14,18 +14,17 @@ Language Version: C# 3.0 or higher</Description>
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>method</ID>
-					<ToolTip>Method name</ToolTip>
-					<Default>Method</Default>
+					<ID>name</ID>
+					<ToolTip>Variable name</ToolTip>
+					<Default>item</Default>
+				</Literal>
+				<Literal>
+					<ID>class</ID>
+					<ToolTip>Class name</ToolTip>
+					<Default>Class</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[
-            public string $method$() {
-            string result = String.Empty;
-            
-            return result;
-        }
-    $end$]]>
+			<Code Language="csharp"><![CDATA[new $class$();$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

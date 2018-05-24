@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>va</Title>
-			<Shortcut>va</Shortcut>
-			<Description>Code snippet for an automatically implemented variable with create new Class
+			<Title>md</Title>
+			<Shortcut>md</Shortcut>
+			<Description>Code snippet for an automatically implemented decimal Method
 Language Version: C# 3.0 or higher</Description>
 			<Author>Evgeny Ustinkin</Author>
 			<SnippetTypes>
@@ -14,17 +14,18 @@ Language Version: C# 3.0 or higher</Description>
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>name</ID>
-					<ToolTip>Variable name</ToolTip>
-					<Default>item</Default>
-				</Literal>
-				<Literal>
-					<ID>class</ID>
-					<ToolTip>Class name</ToolTip>
-					<Default>Class</Default>
+					<ID>method</ID>
+					<ToolTip>Method name</ToolTip>
+					<Default>Method</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[var $name$ = new $class$();$end$]]>
+			<Code Language="csharp"><![CDATA[
+            public decimal $method$() {
+            decimal result = 0;
+            
+            return result;
+        }
+    $end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
