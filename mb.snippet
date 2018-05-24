@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>m</Title>
-			<Shortcut>m</Shortcut>
-			<Description>Code snippet for an automatically implemented void Method
+			<Title>mb</Title>
+			<Shortcut>mb</Shortcut>
+			<Description>Code snippet for an automatically implemented bool Method
 Language Version: C# 3.0 or higher</Description>
 			<Author>Evgeny Ustinkin</Author>
 			<SnippetTypes>
@@ -20,10 +20,12 @@ Language Version: C# 3.0 or higher</Description>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp"><![CDATA[
-            public void $method$() { 
-			
-			}
-            $end$]]>
+            public bool $method$() {
+            var result = false;
+            
+            return result;
+        }
+    $end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
