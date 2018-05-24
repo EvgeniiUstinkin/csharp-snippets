@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>m</Title>
-			<Shortcut>m</Shortcut>
-			<Description>Code snippet for an automatically implemented void Method
+			<Title>ma</Title>
+			<Shortcut>ma</Shortcut>
+			<Description>Code snippet for an automatically implemented Action
 Language Version: C# 3.0 or higher</Description>
 			<Author>Evgeny Ustinkin</Author>
 			<SnippetTypes>
@@ -14,14 +14,16 @@ Language Version: C# 3.0 or higher</Description>
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>method</ID>
-					<ToolTip>Method name</ToolTip>
-					<Default>Method</Default>
+					<ID>action</ID>
+					<ToolTip>Action name</ToolTip>
+					<Default>Action</Default>
 				</Literal>
 			</Declarations>
-			<Code Language="csharp"><![CDATA[public void $method$() { 
-			
-			}$end$]]>
+			<Code Language="csharp"><![CDATA[
+            public ActionResult $action$() {
+            return View();
+        }
+    $end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
